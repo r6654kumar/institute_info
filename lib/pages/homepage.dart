@@ -138,11 +138,30 @@ class _HomeScreenState extends State<HomeScreen> {
             width: MediaQuery.of(context).size.width-30,
             height: MediaQuery.of(context).size.height/5,
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(40),
                 image: DecorationImage(
-                    image:NetworkImage(
-                        "https://images.unsplash.com/photo-1579202673506-ca3ce28943ef"),
+                    image:AssetImage("images/image1.jpg"),
                     fit: BoxFit.cover)),
+              child:Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+               
+                Text("Top Colleges",style:TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color:Colors.white,
+                  fontSize: 23
+                  
+                )),
+                 Container(
+                  height:100,
+                  width:250,
+                   child: Text("Search through thousands of accredited colleges and universities online to find the right one for you.  Apply in 3 min, and connect with your future.",
+                style:TextStyle(
+                    color:Colors.white,
+                    fontSize: 13
+                    
+                )),
+                 ),
+              ],)
           ),
             SizedBox(
             height: 40,
@@ -151,11 +170,30 @@ class _HomeScreenState extends State<HomeScreen> {
             width: MediaQuery.of(context).size.width-30,
             height: MediaQuery.of(context).size.height/5,
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(40),
                 image: DecorationImage(
-                    image: NetworkImage(
-                        "https://images.unsplash.com/photo-1579202673506-ca3ce28943ef"),
+                    image: AssetImage("images/image2.jpg"),
                     fit: BoxFit.cover)),
+            child:Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+               
+                Text("Top Schools",style:TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color:Colors.white,
+                  fontSize: 23
+                  
+                )),
+                 Container(
+                  height:100,
+                  width:250,
+                   child: Text("Searching for the best school for you just got easier! With our Advanced School Search, you can easily filter out the schools that are fit for you.",
+                style:TextStyle(
+                    color:Colors.white,
+                    fontSize: 13
+                    
+                )),
+                 ),
+              ],)
           ),
             SizedBox(
             height: 40,
@@ -164,11 +202,30 @@ class _HomeScreenState extends State<HomeScreen> {
             width: MediaQuery.of(context).size.width-30,
             height: MediaQuery.of(context).size.height/5,
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(40),
                 image: DecorationImage(
-                    image: NetworkImage(
-                        "https://images.unsplash.com/photo-1579202673506-ca3ce28943ef"),
+                    image:AssetImage("images/image3.jpg"),
                     fit: BoxFit.cover)),
+             child:Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+               
+                Text("Exams",style:TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color:Colors.white,
+                  fontSize: 23
+                  
+                )),
+                 Container(
+                  height:100,
+                  width:250,
+                   child: Text("Find an end to end information about the exams that are happening in India",
+                style:TextStyle(
+                    color:Colors.white,
+                    fontSize: 13
+                    
+                )),
+                 ),
+              ],)
           ),
             SizedBox(
             height: 40,
