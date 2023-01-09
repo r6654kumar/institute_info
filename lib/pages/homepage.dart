@@ -11,7 +11,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int pageIdx = 0;
-
+  TextEditingController textController=TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -96,6 +96,37 @@ class _HomeScreenState extends State<HomeScreen> {
                     " Search in 600 colleges around!",
                     style: TextStyle(fontSize: 15, color: Colors.white),
                   )),
+              Container(
+                child:Row(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.fromLTRB(10, 20, 30, 10),
+                      width:MediaQuery.of(context).size.width-100,
+                      decoration:BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(70),
+                      ),
+                      child: TextField(
+                        controller: textController,
+                        decoration: InputDecoration(
+                        border: InputBorder.none,
+                        hintText: "Search for colleges, schools.....",
+                        prefixIcon: Icon(Icons.search),
+
+                      ),
+                      )),
+                    Container(
+                      height:40,
+                      width:40,
+                      decoration: BoxDecoration(
+                        color:Colors.white,
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child:Icon(Icons.mic,color: Colors.black,)
+                    )
+                  ],
+                )
+              ),
             ]),
           ),
         )
