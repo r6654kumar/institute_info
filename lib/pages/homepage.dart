@@ -93,7 +93,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Container(
                   margin: EdgeInsets.fromLTRB(0, 0, 170, 0),
                   child: Text(
-                    " Search in 600 colleges around!",
+                    "Search in 600 colleges around!",
                     style: TextStyle(fontSize: 15, color: Colors.white),
                   )),
               Container(
