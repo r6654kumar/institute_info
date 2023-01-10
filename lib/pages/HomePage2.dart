@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, prefer_const_literals_to_create_immutables
 import 'package:flutter/material.dart';
+import 'package:institute_info/pages/AboutCollege.dart';
+import 'package:institute_info/pages/HostelFacility.dart';
 
 class HomePage2 extends StatefulWidget {
   const HomePage2({super.key});
@@ -116,7 +118,54 @@ class _HomePage2State extends State<HomePage2> {
               SizedBox(
                 height: 10,
               ),
-            
+              DefaultTabController(
+                  length: 4, // length of tabs
+                  initialIndex: 0,
+                  child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: <Widget>[
+                        Container(
+                          child: TabBar(
+                            isScrollable: true,
+                            tabs: [
+                              Tab(
+                                child: Text("About College",
+                                    style: TextStyle(color: Colors.black)),
+                              ),
+                              Tab(
+                                child: Text("Hostel Facility",
+                                    style: TextStyle(color: Colors.black)),
+                              ),
+                              Tab(
+                                child: Text("Q&A",
+                                    style: TextStyle(color: Colors.black)),
+                              ),
+                              Tab(
+                                child: Text("Events",
+                                    style: TextStyle(color: Colors.black)),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                            height: 400, //height of TabBarView
+                            decoration: BoxDecoration(
+                                border: Border(
+                                    top: BorderSide(
+                                        color: Colors.grey, width: 0.5))),
+                            child: TabBarView(children: <Widget>[
+                              Container(
+                                child: AboutCollege(),
+                              ),
+                              Container(
+                                child: HostelFacility(),
+                              ),
+                              Container(
+
+                              ),
+                              Container(),
+                            ]))
+                      ])),
             ],
           ),
         ));
