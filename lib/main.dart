@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:institute_info/pages/HomePage1.dart';
+import 'package:institute_info/pages/HomePage2.dart';
 import 'package:institute_info/pages/homepage.dart';
 void main()
 {
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
        routes: {
       "/" : (context) => HomeScreen(),
       "/homepage1" : (context) => HomePage1(),
+       "/homepage2": (context) => HomePage2(),
     },
     );
   }
