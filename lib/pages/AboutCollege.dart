@@ -124,8 +124,61 @@ class AboutCollege extends StatelessWidget {
                                       color: Colors.grey, width: 0.5))),
                           child: TabBarView(children: <Widget>[
                             Container(
-                              child:Text("hii")
-                            ),
+                                padding: EdgeInsets.all(20),
+                                // ignore: prefer_const_literals_to_create_immutables
+                                child: Column(
+                                  children: [
+                                    Container(
+                                        margin:
+                                            EdgeInsets.fromLTRB(5, 5, 290, 0),
+                                        child: Text(
+                                          "Arun Sai",
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 16),
+                                        )),
+                                    Container(
+                                        margin:
+                                            EdgeInsets.fromLTRB(15, 5, 0, 0),
+                                        width: 500,
+                                        child: Text(
+                                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec sed lorem nunc varius rutrum eget dolor, quis. Nulla sit magna suscipit tellus malesuada in facilisis a.",
+                                          style: TextStyle(fontSize: 12),
+                                        )),
+                                    Container(
+                                        padding: EdgeInsets.all(10),
+                                        child: Row(
+                                      // ignore: prefer_const_literals_to_create_immutables
+                                      children: [
+                                        Icon(
+                                          Icons.star,
+                                          color:
+                                              Color.fromARGB(255, 239, 216, 7),
+                                        ),
+                                        Icon(
+                                          Icons.star,
+                                          color:
+                                              Color.fromARGB(255, 239, 216, 7),
+                                        ),
+                                        Icon(
+                                          Icons.star,
+                                          color:
+                                              Color.fromARGB(255, 239, 216, 7),
+                                        ),
+                                        Icon(
+                                          Icons.star,
+                                          color:
+                                              Color.fromARGB(255, 239, 216, 7),
+                                        ),
+                                        Icon(
+                                          Icons.star_half,
+                                          color:
+                                              Color.fromARGB(255, 239, 216, 7),
+                                        )
+                                      ],
+                                    ))
+                                  ],
+                                )),
                             Container(),
                             Container(),
                             Container(),
