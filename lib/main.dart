@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:institute_info/pages/HomePage1.dart';
 import 'package:institute_info/pages/homepage.dart';
 void main()
 {
@@ -12,8 +13,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Institute Info",
       theme: ThemeData.light(),
-      home:HomeScreen(),
       debugShowCheckedModeBanner: false,
+       routes: {
+      "/" : (context) => HomeScreen(),
+      "/homepage1" : (context) => HomePage1(),
+    },
     );
   }
 }

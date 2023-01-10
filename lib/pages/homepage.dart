@@ -1,11 +1,8 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
 import 'package:flutter/material.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
-
 class HomeScreen extends StatefulWidget {
   HomeScreen({super.key});
-
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
@@ -76,19 +73,22 @@ class _HomeScreenState extends State<HomeScreen> {
                               fontSize: 20,
                               color: Colors.white),
                         )),
-                    Container(
-                      child: Stack(children: <Widget>[
-                        Icon(
-                          Icons.notifications,
-                          color: Colors.white,
-                        ),
-                        Positioned(
-                          top: 0.0,
-                          right: 0.0,
-                          child: Icon(Icons.brightness_1,
-                              size: 8.0, color: Colors.redAccent),
-                        )
-                      ]),
+                    GestureDetector(
+                      onTap: () {},
+                      child: Container(
+                        child: Stack(children: <Widget>[
+                          Icon(
+                            Icons.notifications,
+                            color: Colors.white,
+                          ),
+                          Positioned(
+                            top: 0.0,
+                            right: 0.0,
+                            child: Icon(Icons.brightness_1,
+                                size: 8.0, color: Colors.redAccent),
+                          )
+                        ]),
+                      ),
                     )
                   ],
                 ),
@@ -116,17 +116,20 @@ class _HomeScreenState extends State<HomeScreen> {
                             prefixIcon: Icon(Icons.search),
                           ),
                         )),
-                    Container(
-                        height: 40,
-                        width: 40,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        child: Icon(
-                          Icons.mic,
-                          color: Colors.black,
-                        ))
+                    GestureDetector(
+                      onTap: () {},
+                      child: Container(
+                          height: 40,
+                          width: 40,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: Icon(
+                            Icons.mic,
+                            color: Colors.black,
+                          )),
+                    )
                   ],
                 )),
               ]),
@@ -137,13 +140,69 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           GestureDetector(
             onTap: () {
-             showMaterialModalBottomSheet(
+              showMaterialModalBottomSheet(
                 context: context,
                 enableDrag: true,
                 builder: (context) => Container(
-                  height: 200,
-                ),
-              );;
+                    height: 400,
+                    child: Column(
+                      children: [
+                        TextField(
+                          readOnly: true,
+                          style: TextStyle(
+                            fontWeight: FontWeight.w900,
+                            fontSize: 20,
+                          ),
+                          decoration: InputDecoration(
+                            labelText: "Sort by",
+                            suffixIcon: Icon(Icons.cancel),
+                          ),
+                        ),
+                        GestureDetector(
+                          child: ListTile(
+                            leading: Icon(Icons.engineering),
+                            title: Text("Bachelors of Engineering"),
+                            trailing: Icon(Icons.radio_button_checked_outlined)
+                          ),
+                          onTap: (){
+                            Navigator.pushNamed(context, "/homepage1");
+                          },
+                        ),
+                        GestureDetector(
+                          child: ListTile(
+                            leading: Icon(Icons.architecture),
+                            title: Text("Bachelors of Architecture"),
+                            trailing: Icon(Icons.radio_button_off)
+                          ),
+                        ),
+                        GestureDetector(
+                          child: ListTile(
+                            leading: Icon(Icons.local_pharmacy),
+                            title: Text("Pharmacy"),
+                            trailing: GestureDetector(child: Icon(Icons.radio_button_off),
+                            onTap: (){},)
+                          ),
+                        ),
+                        GestureDetector(
+                          child: ListTile(
+                            leading: Icon(Icons.legend_toggle_sharp),
+                            title: Text("Law"),
+                            trailing: GestureDetector(child: Icon(Icons.radio_button_off),
+                            onTap: (){},)
+                          ),
+                        ),
+                        GestureDetector(
+                          child: ListTile(
+                            leading: Icon(Icons.manage_accounts),
+                            title: Text("Management"),
+                           trailing: GestureDetector(child: Icon(Icons.radio_button_off),
+                            onTap: (){},)
+                          ),
+                        ),
+                      ],
+                    )),
+              );
+              ;
             },
             child: Container(
                 width: MediaQuery.of(context).size.width - 30,
