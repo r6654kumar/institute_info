@@ -200,7 +200,7 @@ class _HomePage1State extends State<HomePage1> {
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(50),
                                   ),
-                                  child: Icon(Icons.favorite_border_outlined,
+                                  child: Icon(Icons.bookmark_border,
                                       color: Colors.black))),
                           Positioned(
                               left: 10.0,
@@ -261,7 +261,10 @@ class _HomePage1State extends State<HomePage1> {
                                   width: 100,
                                   child: Container(
                                       child: TextButton(
-                                          onPressed: () {},
+                                          onPressed: () {
+                                            Navigator.pushNamed(
+                                                context, "/homepage2");
+                                          },
                                           child: Text("Apply Now",
                                               style: TextStyle(
                                                   color: Colors.white))),
@@ -332,7 +335,7 @@ class _HomePage1State extends State<HomePage1> {
                                       color: Colors.white,
                                       borderRadius: BorderRadius.circular(50),
                                     ),
-                                    child: Icon(Icons.favorite_border_outlined,
+                                    child: Icon(Icons.bookmark_border,
                                         color: Colors.black))),
                             Positioned(
                                 left: 10.0,
