@@ -168,7 +168,7 @@ class _HomePage1State extends State<HomePage1> {
             height: 20,
           ),
           GestureDetector(
-            onTap:(){
+            onTap: () {
               Navigator.pushNamed(context, "/homepage2");
             },
             child: Container(
@@ -185,8 +185,36 @@ class _HomePage1State extends State<HomePage1> {
                           topLeft: Radius.circular(8.0),
                           topRight: Radius.circular(8.0),
                         ),
-                        child: Image.asset("images/image4.jpg",
-                            height: 120, fit: BoxFit.fill),
+                        child: Stack(children: [
+                          Container(
+                            child: Image.asset("images/image4.jpg",
+                                height: 120, fit: BoxFit.fill),
+                          ),
+                          Positioned(
+                              right: 25.0,
+                              top: 10.0,
+                              child: Container(
+                                  height: 50,
+                                  width: 50,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(50),
+                                  ),
+                                  child: Icon(Icons.favorite_border_outlined,
+                                      color: Colors.black))),
+                          Positioned(
+                              left: 10.0,
+                              top: 10.0,
+                              child: Container(
+                                  height: 50,
+                                  width: 50,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(50),
+                                  ),
+                                  child:
+                                      Icon(Icons.share, color: Colors.black)))
+                        ]),
                       ),
                       Column(
                         children: [
@@ -194,7 +222,8 @@ class _HomePage1State extends State<HomePage1> {
                             children: [
                               Text("GHJK Engineering college",
                                   style: TextStyle(
-                                      fontWeight: FontWeight.bold, fontSize: 15)),
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 15)),
                               Container(
                                   margin: EdgeInsets.fromLTRB(150, 0, 10, 0),
                                   height: 30,
@@ -246,9 +275,10 @@ class _HomePage1State extends State<HomePage1> {
                             children: [
                               Container(
                                   color: Colors.blue,
-                                  child:
-                                      Icon(Icons.thumb_up, color: Colors.white)),
-                              Text("   More than 1000+ students have been placed",
+                                  child: Icon(Icons.thumb_up,
+                                      color: Colors.white)),
+                              Text(
+                                  "   More than 1000+ students have been placed",
                                   style: TextStyle(fontSize: 12)),
                               SizedBox(width: 50),
                               Container(
@@ -271,7 +301,7 @@ class _HomePage1State extends State<HomePage1> {
             height: 20,
           ),
           GestureDetector(
-            onTap:(){},
+            onTap: () {},
             child: Container(
               margin: EdgeInsets.all(8.0),
               child: Card(
@@ -286,8 +316,38 @@ class _HomePage1State extends State<HomePage1> {
                           topLeft: Radius.circular(8.0),
                           topRight: Radius.circular(8.0),
                         ),
-                        child: Image.asset("images/image5.jpg",
-                            height: 120, fit: BoxFit.fill),
+                        child: Stack(
+                          children: [
+                            Container(
+                              child: Image.asset("images/image5.jpg",
+                                  height: 120, fit: BoxFit.fill),
+                            ),
+                            Positioned(
+                                right: 25.0,
+                                top: 10.0,
+                                child: Container(
+                                    height: 50,
+                                    width: 50,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(50),
+                                    ),
+                                    child: Icon(Icons.favorite_border_outlined,
+                                        color: Colors.black))),
+                            Positioned(
+                                left: 10.0,
+                                top: 10.0,
+                                child: Container(
+                                    height: 50,
+                                    width: 50,
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(50),
+                                    ),
+                                    child:
+                                        Icon(Icons.share, color: Colors.black)))
+                          ],
+                        ),
                       ),
                       Column(
                         children: [
@@ -295,7 +355,8 @@ class _HomePage1State extends State<HomePage1> {
                             children: [
                               Text("Bachelor of Technology",
                                   style: TextStyle(
-                                      fontWeight: FontWeight.bold, fontSize: 15)),
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 15)),
                               Container(
                                   margin: EdgeInsets.fromLTRB(150, 0, 10, 0),
                                   height: 30,
@@ -325,7 +386,7 @@ class _HomePage1State extends State<HomePage1> {
                                 width: 280,
                                 child: Text(
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu ut imperdiet sed nec ullamcorper.",
-                                    style: TextStyle(fontSize: 10)),
+                                    style: TextStyle(fontSize: 15)),
                               ),
                               GestureDetector(
                                 child: Container(
@@ -347,8 +408,8 @@ class _HomePage1State extends State<HomePage1> {
                             children: [
                               Container(
                                   color: Colors.blue,
-                                  child:
-                                      Icon(Icons.thumb_up, color: Colors.white)),
+                                  child: Icon(Icons.thumb_up,
+                                      color: Colors.white)),
                               Text(
                                   " Lorem ipsum dolor sit amet, consectetur adipiscing ",
                                   style: TextStyle(fontSize: 10)),
