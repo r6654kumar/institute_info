@@ -65,7 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Row(
                   children: [
                     Container(
-                        margin: EdgeInsets.fromLTRB(20, 50, 170, 20),
+                        margin: EdgeInsets.fromLTRB(15, 50, 200, 20),
                         child: Text(
                           "Find your own way",
                           style: TextStyle(
@@ -93,7 +93,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
                 Container(
-                    margin: EdgeInsets.fromLTRB(0, 0, 170, 0),
+                    margin: EdgeInsets.fromLTRB(0, 0, 200, 0),
                     child: Text(
                       "Search in 600 colleges around!",
                       style: TextStyle(fontSize: 15, color: Colors.white),
@@ -206,7 +206,7 @@ class _HomeScreenState extends State<HomeScreen> {
             },
             child: Container(
                 width: MediaQuery.of(context).size.width - 30,
-                height: MediaQuery.of(context).size.height / 5,
+                height: 138,
                 decoration: BoxDecoration(
                     image: DecorationImage(
                         image: AssetImage("images/image1.jpg"),
@@ -241,7 +241,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           Container(
               width: MediaQuery.of(context).size.width - 30,
-              height: MediaQuery.of(context).size.height / 5,
+              height: 133,
               decoration: BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage("images/image2.jpg"),
@@ -275,7 +275,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           Container(
               width: MediaQuery.of(context).size.width - 30,
-              height: MediaQuery.of(context).size.height / 5,
+              height: 135,
               decoration: BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage("images/image3.jpg"),

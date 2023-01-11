@@ -87,7 +87,7 @@ class _HomePage2State extends State<HomePage2> {
                     children: [
                       Container(
                         width: 300,
-                        margin: EdgeInsets.fromLTRB(10, 15, 10, 0),
+                        margin: EdgeInsets.fromLTRB(10, 15, 0, 0),
                         child: Text(
                             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis consectetur nulla pharetra praesent hendrerit vulputate viverra. Pellentesque aliquam tempus faucibus est.",
                             style: TextStyle(fontSize: 12)),

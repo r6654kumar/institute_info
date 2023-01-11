@@ -68,7 +68,7 @@ class _HomePage1State extends State<HomePage1> {
                 Row(
                   children: [
                     Container(
-                        margin: EdgeInsets.fromLTRB(20, 50, 170, 20),
+                        margin: EdgeInsets.fromLTRB(15, 50, 200, 20),
                         child: Text(
                           "Find your own way",
                           style: TextStyle(
@@ -97,7 +97,7 @@ class _HomePage1State extends State<HomePage1> {
                   ],
                 ),
                 Container(
-                    margin: EdgeInsets.fromLTRB(0, 0, 170, 0),
+                    margin: EdgeInsets.fromLTRB(0, 0, 200, 0),
                     child: Text(
                       "Search in 600 colleges around!",
                       style: TextStyle(fontSize: 15, color: Colors.white),
@@ -146,7 +146,7 @@ class _HomePage1State extends State<HomePage1> {
             child: Row(children: [
               Container(
                 height: 40,
-                width: 200,
+                width: 180,
                 child: Center(child: Text(" MVSH Engineering college ")),
                 decoration: BoxDecoration(
                   border: Border.all(),
@@ -155,7 +155,7 @@ class _HomePage1State extends State<HomePage1> {
               ),
               Container(
                 height: 40,
-                width: 200,
+                width: 180,
                 child: Center(child: Text(" MVSH Engineering college ")),
                 decoration: BoxDecoration(
                   border: Border.all(),
@@ -258,7 +258,7 @@ class _HomePage1State extends State<HomePage1> {
                               GestureDetector(
                                 child: Container(
                                   height: 40,
-                                  width: 100,
+                                  width: 80,
                                   child: Container(
                                       child: TextButton(
                                           onPressed: () {
@@ -394,7 +394,7 @@ class _HomePage1State extends State<HomePage1> {
                               GestureDetector(
                                 child: Container(
                                   height: 40,
-                                  width: 100,
+                                  width: 80,
                                   child: Container(
                                       child: TextButton(
                                           onPressed: () {},
